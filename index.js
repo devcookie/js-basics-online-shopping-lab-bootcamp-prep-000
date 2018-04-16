@@ -44,7 +44,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  getCart()
+  console.log(getCart())
   for(var i = 0; i < cart.length; i++) {
     if(getCart()[i].itemName === item) {
       getCart().slice(i)

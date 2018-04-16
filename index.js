@@ -48,8 +48,11 @@ function removeFromCart(item) {
   for(var i = 0; i < cart.length; i++) {
     if(getCart()[i].itemName === item) {
       getCart().slice(i)
+      return getCart()
+    } else {
+      return 'That item is not in your cart.'
     }
-  } return getCart()
+  } 
 }
 
 function placeOrder(cardNumber) {
